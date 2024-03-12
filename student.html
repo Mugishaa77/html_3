@@ -3,7 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Form</title>
+    <title>Student Registration Form</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Student Registration Form</h1>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter name here" />
+
+      <label for="date">Date of Birth</label>
+      <input type="date" id="date" name="dateOfBirth" />
+
+      <fieldset>
+        <legend>Gender</legend>
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male">Male</label>
+        <input type="radio" id="no" name="gender" value="Prefer Not To Say" />
+        <label for="no">Prefer Not To Say</label>
+      </fieldset>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="number">Phone Number</label>
+      <input type="tel" id="number" name="phoneNumber" />
+
+      <fieldset>
+        <legend>Subjects</legend>
+        <input type="checkbox" id="science" name="subject" value="Science" />
+        <label for="science">Science</label>
+        <input type="checkbox" id="math" name="subject" value="Mathematics" />
+        <label for="math">Mathematics</label>
+        <input type="checkbox" id="computer" name="subject" value="Computer" />
+        <label for="computer">Computer</label>
+      </fieldset>
+
+      <button type="button">Cancel</button>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
